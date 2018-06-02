@@ -1,0 +1,15 @@
+(jbuild_version 1)
+
+(library
+ ((name parse)
+  (libraries (base fmt menhirLib))
+  (preprocess (pps (ppx_jane)))
+  (synopsis "Parser for itis")
+  ))
+
+(menhir
+  ((modules (parser))
+   (flags (--strict --table --explain))
+   ))
+
+(ocamllex (lexer))

@@ -1,0 +1,11 @@
+opam-version: "1.2"
+maintainer: "ifazk@users.noreply.github.com"
+authors: ["Ifaz Kabir"]
+
+build: [
+  ["jbuilder" "build" "-p" name "-j" jobs]
+]
+
+depends: [
+  "jbuilder" {build & >= "1.0+beta14"}
+]
