@@ -1,5 +1,4 @@
 %{
-open Types;;
 %}
 %token <Types.word_t> WORD
 %token EOF

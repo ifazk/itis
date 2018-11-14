@@ -1,0 +1,14 @@
+(library
+ (name parse)
+ (libraries base fmt menhirLib)
+ (preprocess (pps ppx_jane))
+ (modules lexer parser position types)
+ (synopsis "Parser for itis")
+)
+
+(menhir
+ (modules parser)
+ (flags :standard --strict --table --explain)
+)
+
+(ocamllex lexer)

@@ -5,12 +5,12 @@
 default: all
 
 all:
-	jbuilder build @install
+	dune build @install
 
 # Clean up
 clean:
-# Remove files produced by jbuilder.
-	jbuilder clean
+# Remove files produced by dune.
+	dune clean
 
 cleanall:: clean
 
