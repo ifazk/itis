@@ -1,4 +1,4 @@
-version: "0.1.1"
+version: "0.1.2"
 opam-version: "2.0"
 name: "scratch"
 maintainer: "ifazk@users.noreply.github.com"
@@ -13,7 +13,7 @@ build: [
 ]
 
 depends: [
-  "dune" {build & >= "1.5.1"}
+  "dune" {build & >= "1.6.3"}
   "base" {build}
   "fmt" {build}
   "menhir" {build}
