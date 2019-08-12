@@ -17,7 +17,7 @@ let tok_of_word pos =
     | s -> WORD (Word (s, pos))
 
 let lexbuf_of_file f =
-    let ic = Pervasives.open_in f in
+    let ic = Stdlib.open_in f in
     let lexbuf = Lexing.from_channel ic in
     ( lexbuf.lex_curr_p <-
         { lexbuf.lex_curr_p with pos_fname = f }
